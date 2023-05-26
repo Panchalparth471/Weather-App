@@ -1,0 +1,182 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
+    flex-wrap: wrap;
+    user-select: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+    background-color:rgb(6, 133, 244);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    font-size: xx-large;
+    letter-spacing: 1px;
+    font-weight:bolder;
+}
+.bar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 80%;
+    font-size: larger;
+    /* margin-top: 5%; */
+     border-radius: 5px;
+    border: none;
+    width: 70%;
+}
+.search{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    font-size: large;
+    color:white;  
+        background:rgb(203, 220, 203,0.5);
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+.yw{
+    cursor: pointer;
+}
+h1{
+    font-size: 1.5rem;
+}
+
+.loc{
+
+    width: 15%;
+    height: 60%;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: baseline;
+    height: 25%;
+    width: 50%;
+}
+.boxes{
+    /* margin-top: 2%; */
+    display: flex;
+    justify-content:space-evenly;
+    width: 80%;
+    height: 30%;
+    scale: 0;
+}
+
+.ws,.cloud,.humidity{
+    display: flex;
+      background:rgb(203, 220, 203,0.5);
+      width: 20%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+}
+
+button{
+    border:none;
+   background:rgb(203, 220, 203,0.5);
+    color:white;
+    font-size: large;
+    width: 30%;
+    height: 15;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    justify-content: space-evenly;
+    height: 5%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    scale:0;
+     border-style: none}
+
+
+input::-webkit-input-placeholder {
+background:rgb(203, 220, 203,0.5);
+   color: rgb(6, 133, 244);
+   padding-left: 1%
+
+}
+
+.ws,.cloud,.humidity{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: larger;
+}
+
+.circle{
+width: 4%;
+height: 100%;
+border-radius: 50%;
+/* margin-top: 5%; */
+padding-top: 0.7%;
+padding-left: 0.8%;
+margin-left: 1%;
+   background:rgb(203, 220, 203,0.5);
+}
+
+
+
+.searching{
+    width: 80%;
+    cursor: pointer;
+    height: 80%;
+}
+
+.user-info{
+    display: flex;
+    width: 50%;
+    height: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    font-size:x-large;
+    padding-top:1% ;
+    color: white;
+     transform: translate(0px,-275px);
+     perspective:10px;
+     /* z-index: -1;  */
+}
+.temperature{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+[data-Country]{
+    width: 60%;
+    height: 38%;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+[data-CityName]{
+    font-size:xx-large ;
+    font-weight: 500;
+}
+#loader{
+    width: 100px;
+    height:100px;
+    scale: 0;
+}
